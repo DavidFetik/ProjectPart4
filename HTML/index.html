@@ -1,0 +1,101 @@
+<!-- DEVELOPER: David Fetik, IS117-102, Spring 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-primary">
+    <div class="container">
+      <a class="navbar-brand"><img src="../images/kittycat.png.jpg" alt="Logo" style="height: 90px; width: 80px" class="img-fluid rounded-circle"></a>
+      <button class="navbar-toggler text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              My Projects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="python.html">Python</a></li>
+              <li><a class="dropdown-item" href="java.html">Java</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="bg-primary text-white py-5">
+    <div class="container text-center">
+      <h1>Welcome to My Website!</h1>
+      <p class="lead">Please enjoy your stay.</p>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">This is a website to showcase a few of my simple coding projects.</p>
+          <hr class="my-4">
+          <p>Although I've learned a few languages (or was supposed to), the only languages that stuck with me were Python and Java.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <!-- Bootstrap Cards -->
+        <div class="card mb-4">
+          <img src="../images/python.jpg" alt="python">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <a href="https://www.w3schools.com/python/" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Bootstrap Cards -->
+        <div class="card mb-4">
+          <img src="../images/java.jpg" alt="java">
+          <div class="card-body">
+            <h5 class="card-title">Java</h5>
+            <a href="https://www.w3schools.com/java/" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <a class="btn btn-primary btn-sm d-block mx-auto my-3" href="#" role="button">Back to Top</a>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; David Fetik. April 16th, 2024. Terms of Service. Privacy Statement.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
